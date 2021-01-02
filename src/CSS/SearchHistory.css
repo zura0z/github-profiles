@@ -1,0 +1,64 @@
+.nav-search-history {
+  position: absolute;
+  left: calc(50% - 19.2px);
+  top: 30px;
+  transform: translateX(-50%);
+  background-color: #0d1017;
+  width: 50%;
+  height: fit-content;
+  overflow-x: hidden;
+  border: 0.1px solid rgb(201, 201, 201);
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.searchHistory-container {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 8px 5px;
+  border-bottom: 1px solid rgb(51, 51, 51);
+}
+.searchHistory-mainLink {
+  display: block;
+  width: 100%;
+}
+.searchHistory-container a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+.searchHistory-container:hover {
+  background-color: #0366d6;
+  transition: 100ms ease-in;
+}
+.searchHistory-user-container {
+  display: flex;
+  position: relative;
+}
+.searchHistory-userIcon {
+  width: 20px;
+  margin: 0 5px;
+}
+.searchHistory-jumpTo {
+  position: absolute;
+  display: none;
+  background-color: #0d1017;
+  color: rgb(75, 75, 75);
+  border: 0.3px solid rgb(77, 77, 77);
+  font-weight: 100;
+  border-radius: 5px;
+  padding: 3px 5px;
+  font-size: 11px;
+  right: 8px;
+  z-index: 1;
+}
+.searchHistory-jumpTo-icon {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+.searchHistory-container:hover .searchHistory-jumpTo {
+  display: flex;
+}

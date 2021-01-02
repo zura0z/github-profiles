@@ -1,0 +1,33 @@
+.page404-goBackIcon {
+  width: 20px;
+  height: 20px;
+  animation: arrowAnim 800ms ease-in-out infinite;
+}
+.page404-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #1f48ff;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+.page404-link:hover {
+  transition: 200ms ease-out;
+  background-color: #153ceb;
+}
+.page404-link:active {
+  background-color: #3f60f3;
+}
+@keyframes arrowAnim {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-6px);
+  }
+}

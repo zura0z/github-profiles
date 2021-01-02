@@ -1,0 +1,50 @@
+.remainingRequests-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 2%;
+  top: 0;
+  background-color: #0f1417;
+  width: 100px;
+  height: 80px;
+  border: 1.5px solid rgb(1, 1, 20);
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: ease-out 140ms;
+  z-index: 5;
+}
+.requests-container {
+  cursor: pointer;
+  background-color: #0f1417;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: 1px solid rgb(36, 36, 36);
+}
+.p-requests {
+  color: white;
+  text-align: center;
+}
+.requests {
+  color: white;
+  background-color: #0e1014;
+  height: 100%;
+}
+.requestNumber {
+  text-align: center;
+  margin-top: 10px;
+}
+.remainingTime {
+  text-align: center;
+  padding-bottom: 5px;
+  color: rgb(182, 181, 181);
+  font-size: 12px;
+}
+.expanded {
+  top: 60px;
+  transition: ease-in-out 200ms;
+}
+.red {
+  background-color: #c50000;
+  border-radius: 0 0 4px 4px;
+}

@@ -1,0 +1,52 @@
+.popularUsers-grid {
+  display: flex;
+  max-width: 65%;
+  margin: 85px auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 20px;
+}
+.popularUsers-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 85px auto;
+  max-width: 55%;
+  row-gap: 20px;
+}
+.popularUsers-pageBtn-container {
+  display: flex;
+  width: 150px;
+  margin: 40px auto;
+}
+.popularUsers-pageBtn {
+  cursor: pointer;
+  margin: 0 auto;
+  width: 40px;
+  border-radius: 5px;
+  background-color: #165077;
+}
+.popularUsers-pageBtn:hover {
+  background-color: #242e35;
+  transition: 100ms ease-in;
+}
+.popularUsers-pageBtn:active {
+  background-color: #011826;
+}
+.popularUsers-pageBtn-disabled {
+  background-color: #566670;
+  pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+  .popularUsers-grid,
+  .popularUsers-list {
+    max-width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  .popularUsers-grid,
+  .popularUsers-list {
+    max-width: 95%;
+  }
+}
